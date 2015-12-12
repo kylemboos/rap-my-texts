@@ -1,0 +1,35 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/pocketgrid.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+  <title>Rap My Texts</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Rap My Texts... the beginning.</h1>
+    {{> artistGridTemplate}}
+  </header>
+    {{> textInputTemplate}}
+    {{> textOutputTemplate}}
+</div>
+</body>
+
+<template name="artistGridTemplate">
+  <div class="block-group">
+    <div class="b1 block" id="artistOne"><span>artist 1</span></div>
+    <div class="b2 block" id="artistTwo"><span>artist 2</span></div>
+    <div class="b3 block" id="artistThree"><span>artist 3</span></div>
+  </div>
+</template>
+
+<template name="textInputTemplate">
+  <form class="text-input-form">
+ 		<input type="text" name="inputText" placeholder="Enter your text here..." />
+ 	</form>
+</template>
+<template name="textOutputTemplate">
+  <form class="new-task">
+ 		<input type="text" name="text" placeholder="text output goes here..." />
+ 	</form>
+</template>
